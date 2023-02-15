@@ -1,7 +1,7 @@
-html, body{height: 100%; margin: 0px; padding: 0px;}
+html, body{height: 100vh; margin: 0px; padding: 0px;}
 body{
     display: flex;
-    background-color: #333333;
+    background-color: #3a3a3a;
     color: white;
     justify-content: center;
     align-items: center;
@@ -10,11 +10,23 @@ body{
 .container{
     display: flex;
     justify-content: space-evenly;
-    width: 85%;
-    border: 1px solid white;
+    align-items: center;
+    width: 75%;
 }
 
 .forca, .palavra{
     border: 1px solid red;
-    width: 500px;
+    width:50%;
+    height: 70vh;
 }
+
+#svg{
+    height: 70%;
+}
+
+.forca h1{
+    font-size: 2.5vh;
+    position: relative;
+    left: 12%;
+}
+
