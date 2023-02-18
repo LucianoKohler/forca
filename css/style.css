@@ -1,25 +1,31 @@
-html, body{height: 100vh; margin: 0px; padding: 0px;}
+html, body{height: 100%; margin: 0px; padding: 0px;}
+
 body{
     display: flex;
-    background-color: #3a3a3a;
+    background: linear-gradient(215deg, #3c4052, #08080a) no-repeat fixed;
     color: white;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
+@font-face {
+    font-family: "Oswald";
+    src: url(../assets/Font/Oswald-VariableFont_wght.ttf);
+}
+
 .container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 60%;
+    width: 90%;
     flex-wrap: wrap;
 }
 
 .forca, .palavra{
     border: 1px solid red;
     width:48.98%;
-    height: 70vh;
+    height: 50vh;
 }
 
 .palavra{
@@ -32,9 +38,7 @@ body{
 
 #svg{
     position: relative;
-    top: 10%;
-    bottom: 10%;
-    height: 80%;
+    width: 40vh;
 }
 
 .forca h1{
@@ -43,9 +47,26 @@ body{
     left: 12%;
 }
 
-.teclado{
+.kbd{
     width: 100%;
     border: 1px solid blue;
     display: grid;
 }
 
+.kbd-row{
+    display: flex;
+    justify-content: center;
+}
+.kbd-btn{
+    margin: 0.2%;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 2.5vh;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    min-width: 32px;
+    width: 5%;
+    min-height: 60px;
+    height: 7vh;
+    border-radius: 1vh;
+}
