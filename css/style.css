@@ -57,7 +57,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.kbd-btn{
+#kbd-btn{
     font-family: 'Oswald';
     margin: 0.2%;
     color: white;
