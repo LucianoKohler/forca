@@ -15,6 +15,14 @@ body{
     src: url(../assets/Font/Oswald-VariableFont_wght.ttf);
 }
 
+@keyframes floater {
+    50%{
+        transform: translateY(-25px);
+    }
+    0%{
+        transform: translateY(0px);
+    }
+}
 
 .container{
     display: flex;
@@ -22,6 +30,7 @@ body{
     align-items: center;
     width: 90%;
     flex-wrap: wrap;
+    margin-top: 5%;
 }
 
 
@@ -38,6 +47,12 @@ body{
     word-spacing: 10px;
 }
 
+.forca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #svg{
     width: 35vh;
 }
@@ -50,13 +65,14 @@ body{
 
 .kbd{
     width: 100%;
-    display: grid;
+    margin-top: 2%;
 }
 
 .kbd-row{
     display: flex;
     justify-content: center;
 }
+
 #kbd-btn{
     font-family: 'Oswald';
     margin: 0.2%;
@@ -69,6 +85,16 @@ body{
     min-height: 60px;
     height: 7vh;
     border-radius: 1vh;
+    transition: background-color 0.2s;
+}
+
+#kbd-btn:hover{
+    cursor: pointer;
+    background-color: rgb(49, 49, 49);
+}
+
+#kbd-btn:active{
+    background-color: white;
 }
 
 .swipe-to-play{
@@ -110,9 +136,38 @@ body{
         font-size: 1.3em;
         width: 100%;
         text-align: center;
+        animation-name: floater;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    
     }
 
     .ghostspace{
         height: 300px;
     }
+}
+
+/*FOOTER*/
+
+footer{
+    align-self: flex-end;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 10px;    
+    position: relative;
+    right: 7%;
+    font-size: 0.8em;
+}
+
+footer ul li a{
+    text-decoration: underline;
+    color: white;
 }
