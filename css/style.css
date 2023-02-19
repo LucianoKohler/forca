@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 @font-face {
@@ -99,6 +100,12 @@ body{
 
 .swipe-to-play{
     display: none;
+}
+
+
+#lives{
+    margin: 1%;
+    font-size: 1.5em;
 }
 
 @media (max-width: 920px) {
